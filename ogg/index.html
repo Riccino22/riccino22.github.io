@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta
+property="og:image" content="https://www.elchiguirebipolar.net/wp/wp-content/uploads/2022/04/elon-chiguire-1060x555.png" /><meta
+property="og:image:secure_url" content="https://www.elchiguirebipolar.net/wp/wp-content/uploads/2022/04/elon-chiguire-1060x555.png" /><meta
+property="og:image:width" content="1060" /><meta
+property="og:image:height" content="555" /><meta
+property="og:image:alt" content="Elon Musk compra El Chigüire Bipolar | El Chigüire Bipolar" /><meta
+property="og:url" content="https://www.elchiguirebipolar.net/26-04-2022/elon-musk-compra-el-chiguire-bipolar/" /><meta
+property="og:description" content="
+Según rumores de portales especializados, el millonario surafricano Elon Musk, emprendedor de automóviles eléctricos, compañías de desarrollo espacial y fundador de Paypal, la plataforma que funciona igual que el BOD, ha conseguido hacer realidad lo que se veía como algo imposible: comprar El Chigüire Bipolar. Según los informantes, las partes estarían esperando la resolución de algunos trámites legales para dar a conocer oficialmente la noticia, como resolver qué hacer con el pasante subpagado, vencer la traba de la gestora que pone los sellos en la notaría y convencer a Elías Jaua de que venda su 17,5% de acciones por 3 bolívares y una chupeta." /><meta
+name="twitter:url" value="https://www.elchiguirebipolar.net/26-04-2022/elon-musk-compra-el-chiguire-bipolar/"><meta
+name="twitter:title" value="Elon Musk compra El Chigüire Bipolar | El Chigüire Bipolar">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="uno">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>uno</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    var serviceWorkerVersion = null;
+    var scriptLoaded = false;
+    function loadMainDartJs() {
+      if (scriptLoaded) {
+        return;
+      }
+      scriptLoaded = true;
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'main.dart.js';
+      scriptTag.type = 'application/javascript';
+      document.body.append(scriptTag);
+    }
+
+    if ('serviceWorker' in navigator) {
+      // Service workers are supported. Use them.
+      window.addEventListener('load', function () {
+        // Wait for registration to finish before dropping the <script> tag.
+        // Otherwise, the browser will load the script multiple times,
+        // potentially different versions.
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        navigator.serviceWorker.register(serviceWorkerUrl)
+          .then((reg) => {
+            function waitForActivation(serviceWorker) {
+              serviceWorker.addEventListener('statechange', () => {
+                if (serviceWorker.state == 'activated') {
+                  console.log('Installed new service worker.');
+                  loadMainDartJs();
+                }
+              });
+            }
+            if (!reg.active && (reg.installing || reg.waiting)) {
+              // No active web worker and we have installed or are installing
+              // one for the first time. Simply wait for it to activate.
+              waitForActivation(reg.installing || reg.waiting);
+            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              // When the app updates the serviceWorkerVersion changes, so we
+              // need to ask the service worker to update.
+              console.log('New service worker available.');
+              reg.update();
+              waitForActivation(reg.installing);
+            } else {
+              // Existing service worker is still good.
+              console.log('Loading app from service worker.');
+              loadMainDartJs();
+            }
+          });
+
+        // If service worker doesn't succeed in a reasonable amount of time,
+        // fallback to plaint <script> tag.
+        setTimeout(() => {
+          if (!scriptLoaded) {
+            console.warn(
+              'Failed to load app from service worker. Falling back to plain <script> tag.',
+            );
+            loadMainDartJs();
+          }
+        }, 4000);
+      });
+    } else {
+      // Service workers not supported. Just drop the <script> tag.
+      loadMainDartJs();
+    }
+  </script>
+</body>
+</html>
