@@ -1,27 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>MATHPLE</title>
-    <meta
-property="og:image" content="https://www.elchiguirebipolar.net/wp/wp-content/uploads/2022/04/elon-chiguire-1060x555.png" /><meta
-property="og:image:secure_url" content="https://www.elchiguirebipolar.net/wp/wp-content/uploads/2022/04/elon-chiguire-1060x555.png" /><meta
-property="og:image:width" content="1060" /><meta
-property="og:image:height" content="555" /><meta
-property="og:image:alt" content="Elon Musk compra El Chigüire Bipolar | El Chigüire Bipolar" /><meta
-property="og:url" content="https://www.elchiguirebipolar.net/26-04-2022/elon-musk-compra-el-chiguire-bipolar/" /><meta
-property="og:description" content="
-Según rumores de portales especializados, el millonario surafricano Elon Musk, emprendedor de automóviles eléctricos, compañías de desarrollo espacial y fundador de Paypal, la plataforma que funciona igual que el BOD, ha conseguido hacer realidad lo que se veía como algo imposible: comprar El Chigüire Bipolar. Según los informantes, las partes estarían esperando la resolución de algunos trámites legales para dar a conocer oficialmente la noticia, como resolver qué hacer con el pasante subpagado, vencer la traba de la gestora que pone los sellos en la notaría y convencer a Elías Jaua de que venda su 17,5% de acciones por 3 bolívares y una chupeta." /><meta
-name="twitter:url" value="https://www.elchiguirebipolar.net/26-04-2022/elon-musk-compra-el-chiguire-bipolar/">
+    <title>Riccardo Inojosa | Python Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="./styles/styies.css">
 </head>
 <body>
-    <div id="game"></div>
-    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
-    <!--script src="./js/phaser.js"></script-->
-   <script src="./js/index.js" type="module"></script> 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3254063876195801"
-     crossorigin="anonymous"></script>
+
+    <header class="header">
+        <nav class="container navbar">
+            <a href="#" class="nav-logo">RI<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-down">Riccardo Inojosa</h1>
+                <p class="subtitle" id="subtitle"></p>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                    <a href="mailto:riccardoinojosa@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/riccino" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Riccino22" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 data-aos="fade-up">Sobre mí</h2>
+            <p data-aos="fade-up" data-aos-delay="100">
+                Ingeniero Python en formación con experiencia práctica en tecnologías como Odoo, Flask, Django y MongoDB. Competente en HTML, CSS y JavaScript, y con conocimientos fundamentales de Docker. Mi objetivo es unirme a un equipo dinámico para contribuir al desarrollo de aplicaciones innovadoras, con la aspiración de convertirme en un desarrollador senior de Python especializado en Django y Odoo. Soy autodidacta, responsable, puntual y con una fuerte ética de trabajo, prosperando en entornos de equipo y comprometido con el aprendizaje continuo.
+            </p>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 data-aos="fade-up">Experiencia Laboral</h2>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="card">
+                        <h3>Intern (Pasantía)</h3>
+                        <p class="meta">Digital Business Group (Uruguay - Remoto) | Junio 2024 - Febrero 2025</p>
+                        <ul>
+                            <li><strong>Desarrollo y herencia de módulos personalizados en Odoo:</strong> Diseño e implementación de nuevas funcionalidades para satisfacer requisitos específicos del cliente.</li>
+                            <li><strong>Migración de módulos:</strong> Migración de módulos frontend y backend de Odoo 15/16 a v17, asegurando compatibilidad.</li>
+                            <li><strong>Widgets personalizados con OWL:</strong> Desarrollo de widgets dinámicos e interactivos para mejorar la experiencia de usuario en Odoo.</li>
+                            <li><strong>Integración de sistemas:</strong> Implementación de procesos de sincronización con bases de datos remotas y sistemas externos.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Trainee</h3>
+                        <p class="meta">Vijoin Software Factory SAS (Uruguay - Remoto) | Abril 2024 - Mayo 2024</p>
+                        <p>Desarrollo de múltiples módulos para extender las funcionalidades nativas de Odoo en las áreas de Help Desk, Inventario, Compras, Ventas y Correo. Se aplicaron conceptos como herencia de modelos, creación de wizards, uso de decoradores (`@api.onchange`, `@api.depends`), modificación de vistas y creación de reportes QWeb.</p>
+                        </div>
+                    <div class="card">
+                        <h3>Flutter Developer (Trainee)</h3>
+                        <p class="meta">Grupo Empresarial One (Venezuela - Remoto) | Febrero 2022 - Octubre 2022</p>
+                        <p>Desarrollo de la aplicación "Joie Driver Registro", una app para el registro de conductores utilizando Flutter para la interfaz y Firebase como base de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 data-aos="fade-up">Proyectos Personales</h2>
+                <div class="projects-grid">
+                    <div class="card" data-aos="fade-up">
+                        <h3>Langchain Hybrid Assistant</h3>
+                        <p>Asistente inteligente que combina RAG para recuperación de conocimiento desde manuales y un agente de Python para análisis de datos (CSVs). Construido con Langchain y Groq.</p>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Auto Visualization</h3>
+                        <p>Aplicación web con Django y LangChain que sugiere gráficos de visualización de datos a partir de un archivo CSV cargado por el usuario.</p>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Test Generator</h3>
+                        <p>App en Python que genera exámenes usando un modelo de lenguaje (con LangChain) y una interfaz creada con Streamlit.</p>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <h3>Riccino Blog</h3>
+                        <p>Un blog personal sobre tecnología y programación, desarrollado desde cero utilizando el framework Django.</p>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Movie Management System</h3>
+                        <p>Aplicación desarrollada como un módulo de Odoo para la gestión completa de un catálogo de películas.</p>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Vocabulary Management System</h3>
+                        <p>Módulo de Odoo para gestionar vocabulario, integrando LangChain para enriquecer la información de las palabras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="container">
+                <h2 data-aos="fade-up">Habilidades Técnicas y Blandas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-right">
+                        <h3><i class="fas fa-code"></i> Backend</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>Odoo</li>
+                            <li>Node.js / Express</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Odoo Web Library (OWL)</li>
+                            <li>Streamlit</li>
+                            <li>Flutter (Básico)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-left">
+                        <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-right">
+                         <h3><i class="fas fa-brain"></i> IA & Machine Learning</h3>
+                        <ul>
+                            <li>LangChain</li>
+                            <li>Retrieval-Augmented Generation (RAG)</li>
+                            <li>AI Agents</li>
+                            <li>NLTK</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up">
+                         <h3><i class="fas fa-tools"></i> Herramientas y DevOps</h3>
+                        <ul>
+                            <li>Docker</li>
+                            <li>Git & GitHub</li>
+                            <li>Selenium</li>
+                            <li>Beautiful Soup</li>
+                            <li>ClickUp & Notion</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-left">
+                        <h3><i class="fas fa-handshake"></i> Habilidades Blandas</h3>
+                        <ul>
+                            <li>Comunicación efectiva</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Autodidacta</li>
+                            <li>Responsabilidad y puntualidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact-info" data-aos="zoom-in">
+                <h2>Contacto</h2>
+                <p>¡Hablemos! Estoy buscando nuevas oportunidades y me encantaría saber cómo puedo aportar a tu equipo. No dudes en contactarme.</p>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i> Montevideo, Uruguay
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i> <a href="mailto:riccardoinojosa@gmail.com">riccardoinojosa@gmail.com</a>
+                </div>
+                 <div class="contact-item">
+                    <i class="fas fa-phone"></i> <a href="tel:+59896644402">+598 96 644 402</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/riccino" target="_blank">linkedin.com/in/riccino</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i> <a href="https://github.com/Riccino22" target="_blank">github.com/Riccino22</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Riccardo Inojosa. Diseñado y construido con ❤️.</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar la librería de animaciones
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Animación de tipeo para el subtítulo
+        const subtitleText = "Python Developer (Junior)";
+        let i = 0;
+        const speed = 100;
+        const subtitleElement = document.getElementById("subtitle");
+
+        function typeWriter() {
+            if (i < subtitleText.length) {
+                subtitleElement.innerHTML = subtitleText.substring(0, i + 1) + '<span class="typing-cursor">|</span>';
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                 subtitleElement.innerHTML = subtitleText;
+            }
+        }
+
+        window.onload = function() {
+            setTimeout(typeWriter, 500); // Iniciar después de un breve retraso
+        };
+    </script>
 </body>
 </html>
